@@ -1,66 +1,126 @@
-# Unit 15: Project 2
+# 15 Project 2: Interactive Full-Stack Application
 
-## Overview
+Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—-and you can use your finished projects for that very purpose.
 
-Welcome to Project 2! This is yet another important milestone in your full-stack journey: designing and building your first full-stack web application. You and your team will design and build an app using the MVC paradigm, create your own server-side API, add user authentication, and connect to a database.
+As your first opportunity to show employers your collaborative skills and coding abilities, this particular project will be a focal point of your portfolio. Employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
 
-## Key Topics
+## Project Requirements
 
-The following topics will be covered in this unit:
+You and your group will use everything you’ve learned over the past six units to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
 
-* Full-stack applications
+* Use Node.js and Express.js to create a RESTful API.
 
-* [Git branching workflow](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+* Use Handlebars.js as the template engine.
 
-* [Agile software development](https://en.wikipedia.org/wiki/Agile_software_development)
+* Use MySQL and the Sequelize ORM for the database.
 
-* Collaborative development
+* Have both GET and POST routes for retrieving and adding new data.
 
-## Learning Objectives
+* Use at least one new library, package, or technology that we haven’t discussed.
 
-You will be employer-ready if you are able to:
+* Have a folder structure that meets the MVC paradigm.
 
-* Speak technically about a feature you implemented in your project
+* Include authentication (express-session and cookies).
 
-* Explain and execute git branching workflow in a collaborative project
+* Protect API keys and sensitive information with environment variables.
 
-* Resolve merge conflicts
+* Be deployed using Heroku (with data).
 
-* Explain agile software development
+* Have a polished UI.
 
-* Design, build and deploy a full-stack web application to Heroku
+* Be responsive.
 
-* Prepare a professional presentation and repository README for your project
+* Be interactive (i.e., accept and respond to user input).
 
-## Homework
+* Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
-With your team, you’ll conceive and execute a design that solves a real-world problem. In creating your first collaborative full-stack application, you’ll combine a robust back end--with servers, databases, advanced APIs, and user authentication—-to an intuitive front end. You’ll continue to build on the agile development methodologies you’ve used throughout this course, like storing your project code in GitHub, managing your work with a project management tool, and implementing feature and bug fixes using the Git branch workflow and pull requests.
+* Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-Instead of using the front end you developed for your first project, you should start from scratch. Doing so will help you reinforce your existing front-end abilities and solidify your understanding of the dynamic between the front end and back end. Also, you’ve likely improved your skills since that first project, so with a stronger foundation now you can build a better application, using all of the additional practice you’ve had in the last several weeks.
+## Presentation Requirements
 
-## Career Connection
+Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
 
-For more information about career services, including coding milestones, demo days, technical toolkits, workshops, and additional resources, visit the [career services website](https://careernetwork.2u.com/?utm_medium=Academics&utm_source=boot_camp/).
+* Elevator pitch: a one minute description of your application
 
-## Heads-Up
+* Concept: What is your user story? What was your motivation for development?
 
-In the next unit, you'll continue to work on your group projects. You'll end the week by presenting your project to your class. Once your project is complete, you'll want to update your professional materials and add your new project to your portfolio.
+* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
 
-## Resources
+* Demo: Show your stuff!
 
-Here are some additional resources to help solidify the topics covered in this unit.
+* Directions for Future Development
 
-### Full-Stack Blog Posts
+* Links to the deployed application and the GitHub repository. Use the [Guide to Deploy with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql) on The Full-Stack Blog if you need a reminder on how to deploy to Heroku.
 
-Check out the [Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/) for additional resources, like walkthroughs, articles, and installation guides.
+## Grading Requirements
 
-  * 📖 [Deploy with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql)
+This project is graded based on the following criteria:
 
-### General
+### Technical Acceptance Criteria: 25%
 
-Refer to these resources for additional information about topics covered in this unit.
+* Satisfies the following code requirements:
 
-  * 📖 [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial/getting_started)
+  * Application uses a Node.js and Express.js back end and uses both GET and POST routes for retrieving and adding new data.
+
+  * Application has a folder structure that meets the MVC paradigm and uses Handlebars.js as the template engine.
+
+  * Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.
+
+  * Application includes user authentication (express-session and cookies).
+
+  * Application uses at least one new library, package, or technology not covered in class.
+
+### Concept 10%
+
+* Application should be a unique and novel idea.
+
+* Your group should clearly and concisely articulate your project idea.
+
+### Deployment: 20%
+
+* Application deployed at live URL on Heroku and loads with no errors.
+
+* Application GitHub URL submitted.
+
+### Repository Quality: 10%
+
+* Repository has a unique name.
+
+* Repository follows best practices for file structure and naming conventions.
+
+* Repository follows best practices for class/id-naming conventions, indentation, quality comments, etc.
+
+* Repository contains multiple descriptive commit messages.
+
+* Repository contains quality README file with description, screenshot, and link to deployed application.
+
+### Application Quality: 15%
+
+* Application user experience is intuitive and easy to navigate.
+
+* Application user interface style is clean and polished.
+
+* Application is responsive.
+
+### Presentation 10%
+
+* Your group should present using Powerpoint or a similar presentation software.
+
+* Every group member should speak during the presentation.
+
+* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
+
+### Collaboration 10%
+
+* There are no major disparities in the number of GitHub contributions between group members.
+
+## How to Submit Your Interactive Full-Stack Project
+
+**Each member of your group** is required to submit the following for review:
+
+* The URL of the deployed application.
+
+* The URL of the GitHub repository, with a unique name and a README describing the project.
 
 ---
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.

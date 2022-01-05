@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Project extends Model {}
-
+// insert latitude/longitude, review,  
 Project.init(
   {
     id: {

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Sal's Shred",
+    "description": "sal@hotmail.com",
+    "latitude": 34.0927382,
+    "longitude": -117.9366049
+  },
+  {
+    "name": "Sal's Shred 2",
+    "description": "sal@hotmail.com",
+    "latitude": -52.0927382,
+    "longitude": 123.9366049
+  },
+  {
+    "name": "Sal's Shred 3",
+    "description": "sal@hotmail.com",
+    "latitude": 68.0927382,
+    "longitude": -138.9366049
+  }
+]

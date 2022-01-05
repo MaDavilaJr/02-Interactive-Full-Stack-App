@@ -14,7 +14,7 @@ router.post('/', withAuth, async (req, res) => {
     res.status(400).json(err);
   }
 });
-
+// /lat, /lon
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const projectData = await Project.destroy({

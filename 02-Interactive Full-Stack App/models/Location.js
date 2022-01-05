@@ -1,9 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
-// insert latitude/longitude, review,  
-Project.init(
+class Location extends Model {}
+// insert latitude/longitude, review,
+// insert long/latitude colemn, datatype of float
+// get geolocation, fetch all of the locations near 
+Location.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -18,21 +20,18 @@ Project.init(
     description: {
       type: DataTypes.STRING,
     },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
-    needed_funding: {
+    // date_created: {
+    //   type: DataTypes.DATE,
+    //   allowNull: false,
+    //   defaultValue: DataTypes.NOW,
+    // },
+    longitude: {
       type: DataTypes.FLOAT,
       allowNull: false,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
+    latitude: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
     },
   },
   {
@@ -40,8 +39,8 @@ Project.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'location',
   }
 );
 
-module.exports = Project;
+module.exports = Location;

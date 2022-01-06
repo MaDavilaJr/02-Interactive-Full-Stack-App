@@ -4,13 +4,22 @@ const { User, Location } = require('../models');
 
 const locationData = [
   {
-    name: "Sal's Shred",
-    description: "sal@hotmail.com",
+    name: "Sal's Shred Shed",
+    description: "Sick",
     latitude: 34.0927382,
     longitude: -117.9366049
   },
   {
-      
+    name: "Sal's Second Shred Shed",
+    description: "Very sick",
+    latitude: 34.0927382,
+    longitude: -117.9366049
+  },
+  {
+  name: "Sal's Sick Third Shredder Shed",
+  description: "Extremely sick & Ill",
+  latitude: 34.0927382,
+  longitude: -117.9366049
   }
 ]
 

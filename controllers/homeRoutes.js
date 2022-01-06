@@ -27,6 +27,17 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/locations', async (req, res) => {
+  try {
+    const locationsData = await Location.findAll();
+    const locations = locationsData.map((location) => location.get({ plain: true }));
+    res.render("locations", {locations});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
 router.get('/location/:id', async (req, res) => {
   try {
     const locationData = await Location.findByPk(req.params.id, {
@@ -37,10 +48,10 @@ router.get('/location/:id', async (req, res) => {
         },
       ],
     });
-
+    
     const location = locationData.get({ plain: true });
 
-    res.render('location', {
+    res.render('locations', {
       ...location,
       logged_in: req.session.logged_in
     });
@@ -55,7 +66,7 @@ router.get('/location/:id', async (req, res) => {
 //     // Find the logged in user based on the session ID
 //     const userData = await User.findByPk(req.session.user_id, {
 //       attributes: { exclude: ['password'] },
-//       include: [{ model: Project }],
+//       include: [{ model: Location }],
 //     });
 
 //     const user = userData.get({ plain: true });

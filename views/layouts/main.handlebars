@@ -11,14 +11,9 @@
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
-      </h1>
-      <nav class="navbar navbar-expand-lg navbar-light bg-cyan">
-    <h1 class="navbar-brand" href="#">Skatas Paradise</h1>
+  <div class="vh-100 d-flex justify-content-between flex-column">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h1 class="navbar-brand" href="#">Skate4 PARADISE BAY BBBB</h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,13 +27,13 @@
         {{/if}}
             <a class="nav-item nav-link" href="#">Locations</a>
             <a class="nav-item nav-link disabled" href="#">Disabled</a>
-        </div>
-    </div>
-  </nav>
+      </nav>
     </header>
     <main class="container container-fluid mt-5">
+      <div class="d-flex justify-content-center align-items-center h-100">
       <!-- Render the sub layout -->
       {{{ body }}}
+      </div>
     </main>
 <footer class=" footContainer 
                 d-flex 
@@ -85,7 +80,7 @@
     </div>
   </div>
 
-  <div class="row text-center text-white w-75 me-auto ms-auto">
+  <div class="row text-center text-black w-75 me-auto ms-auto">
     <div class= "col">Home</div>
     <div class= "col">Services</div>
     <div class= "col">About</div>
@@ -93,6 +88,7 @@
     <div class= "col">Privacy Policy</div>
   </div>
 </footer>
+</div>
   </div>
 
   <!-- Render script for logged in users only -->
@@ -100,6 +96,5 @@
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
-
 
 </html>

@@ -2,6 +2,12 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+body {
+  background: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/16301132/skate3.gif");
+  background-size: cover;
+  width: 100%;
+}
+
 .no-button {
   background: none;
   border: none;

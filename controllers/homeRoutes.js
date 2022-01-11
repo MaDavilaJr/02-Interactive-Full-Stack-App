@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Location, User } = require('../models');
+const { Location, User, Review } = require('../models');
 const withAuth = require('../utils/auth');
 // 
 router.get('/', async (req, res) => {
@@ -29,9 +29,16 @@ router.get('/', async (req, res) => {
 
 router.get('/locations', async (req, res) => {
   try {
-    const locationsData = await Location.findAll();
+    const locationsData = await Location.findAll({
+      include: [
+        {
+          model: Review,
+          attributes: ['id', 'description', 'user_id', 'location_id']
+        }
+      ]
+    });
     const locations = locationsData.map((location) => location.get({ plain: true }));
-    res.render("locations", {locations});
+    res.render("locations", {locations,  logged_in: req.session.logged_in});
   } catch (err) {
     res.status(500).json(err);
   }

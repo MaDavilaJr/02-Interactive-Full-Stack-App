@@ -14,8 +14,10 @@ router.get('/locations', async (req, res) => {
 router.post('/', withAuth, async (req, res) => {
   try {
     const newLocation = await Location.create({
-      ...req.body,
-      user_id: req.session.user_id,
+      name: req.body.name,
+      description: req.body.description,
+      longitude: req.body.longitude,
+      latitude: req.body.latitude
     });
 
     res.status(200).json(newLocation);

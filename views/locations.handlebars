@@ -1,3 +1,57 @@
-<div>
-    hello
+<div  style="display: flex; flex-wrap: wrap;">
+    {{#if locations.length}}
+    <section style="background-color: white; padding:20px; opacity: 70%;">
+        <h2>Skate Locations!</h2>
+        <ol>
+            {{#each locations as |location|}}
+            <li>
+            <article class="location">
+                <div class="locationName">
+                    <p>{{location.name}}</p>
+                </div>
+                <div class="coordinates">
+                    <p>{{location.longitude}}, {{location.latitude}}</p>
+                </div>
+                <div class="description">
+                    <p>{{location.description}}</p>
+                </div>
+                <div>
+                    <a href="/location/{{id}}">{{reviews.length}} Reviews</a>
+                </div>
+            </article>
+            </li>
+            {{/each}}
+        </ol>
+    </section>
+    {{/if}}
+
+    <section  style="background-color: white; padding:20px; opacity: 70%;">
+        <h2>Submit a New Location</h2>
+        <form class="createLocation">
+            <div>
+                <label for="location-name">Location Name:</label>
+                <input type="text" name="location-name" id="location-name">
+            </div>
+
+            <div>
+                <label for="location-description">Location Description:</label>
+                <input type="text" name="location-description" id="location-description">
+            </div>
+
+            <div>
+                <label for="location-long">Location Longitude:</label>
+                <input type="text" name="location-long" id="location-long">
+            </div>
+
+            <div>
+                <label for="location-lat">Location Latitude:</label>
+                <input type="text" name="location-lat" id="location-lat">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
 </div>
+
+<script src="/js/location.js"></script>
